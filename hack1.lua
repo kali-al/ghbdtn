@@ -210,7 +210,7 @@ earbleep.Priority = 55
 Welcome.Text = "WELCOME: "..Name..""
 TextLabel.Text = "HELLO: "..Name..""
 --Local key
-key = "1"
+key = "Cat_Hacker"
 --Check key
 CheckKey.MouseButton1Down:connect(function()
 if KeyBox.Text == key  then 
