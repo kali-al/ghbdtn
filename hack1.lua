@@ -189,7 +189,7 @@ earbleep.Enabled = true
 earbleep.Priority = 55
 Welcome.Text = "WELCOME: "..Name..""
 TextLabel.Text = "HELLO: "..Name..""
-key = "pipi22899965481"
+key = "ghjkghjfglkhjlfgkjhlfgkh456465564"
 CheckKey.MouseButton1Down:connect(function()
 if KeyBox.Text == key  then 
 	game.StarterGui:SetCore('SendNotification', {
