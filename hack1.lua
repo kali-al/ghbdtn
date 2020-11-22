@@ -1,3 +1,4 @@
+local player = game.Players.LocalPlayer
 game.StarterGui:SetCore('SendNotification', { 
 Duration = 5;
     })
@@ -15,8 +16,11 @@ local MainFrame = Instance.new("Frame")
 local NameGUI = Instance.new("TextLabel")
 local Ver = Instance.new("TextLabel")
 local FuncFrame = Instance.new("Frame")
-local imz = Instance.new("TextButton")
-local CloseB = Instance.new("TextButton")
+local ScreenGui = Instance.new("ScreenGui")
+local Main1 = Instance.new("ImageLabel")
+local Roundify = Instance.new("ImageLabel")
+local Roundify_1 = Instance.new("ImageLabel")
+local Attach = Instance.new("TextButton")
 Main.Name = "Main"
 Main.Parent = game.CoreGui
 ErrorFrame.Name = "ErrorFrame"
@@ -145,39 +149,41 @@ FuncFrame.Name = "FuncFrame"
 FuncFrame.Parent = MainFrame
 FuncFrame.BackgroundColor3 = Color3.new(0, 0, 0)
 FuncFrame.BackgroundTransparency = 0.34999999403954
-FuncFrame.Position = UDim2.new(-2.7415731, 0, -0.935483873, 0)
-FuncFrame.Size = UDim2.new(0, 290, 0, 300)
-CloseB.Name = "CloseB"
-CloseB.Parent = FuncFrame
-CloseB.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-CloseB.Position = UDim2.new(0.849315047, 0, 0, 0)
-CloseB.Size = UDim2.new(0, 33, 0, 27)
-CloseB.Font = Enum.Font.SourceSans
-CloseB.Text = "X"
-CloseB.TextColor3 = Color3.fromRGB(0, 0, 0)
-CloseB.TextScaled = true
-CloseB.TextSize = 14.000
-CloseB.TextWrapped = true
-CloseB.MouseButton1Down:connect(function()
-FuncFrame.Visible = false
-end)
-imz.Name = "imz"
-imz.Parent = FuncFrame
-imz.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
-imz.Position = UDim2.new(0.015, 0, 0.355, 0)
-imz.Size = UDim2.new(0, 154, 0, 40)
-imz.Font = Enum.Font.SourceSans
-imz.Text = "inject"
-imz.TextColor3 = Color3.fromRGB(255, 0, 0)
-imz.TextScaled = true
-imz.TextSize = 14
-imz.TextWrapped = true
-imz.MouseButton1Down:connect(function()
+FuncFrame.Position = UDim2.new(-3.5, 0, -2, 0)
+FuncFrame.Size = UDim2.new(0, 340, 0, 190)
+Main1.Name = "Main1"
+Main1.Parent = FuncFrame
+Main1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main1.Position = UDim2.new(0.014, 0, 0.028, 0)
+Main1.Size = UDim2.new(0, 340, 0, 190)
+Main1.Visible = false
+Main1.Image = ""
+Roundify.Name = "Roundify"
+Roundify.Parent = FuncFrame
+Roundify.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Roundify.Position = UDim2.new(0.0000001, 0, 0.00000001, 0)
+Roundify.Size = UDim2.new(0, 340, 0, 100)
+Roundify.Image = "rbxassetid://5979339111"
+Roundify_1.Name = "Roundify_1"
+Roundify_1.Parent = FuncFrame
+Roundify_1.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Roundify_1.Position = UDim2.new(0.0000001, 0, 0.5, 0)
+Roundify_1.Size = UDim2.new(0, 340, 0, 100)
+Roundify_1.Image = "rbxassetid://5983689399"
+Attach.Name = "Attach"
+Attach.Parent = FuncFrame
+Attach.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
+Attach.Position = UDim2.new(0.2, 0, 0.64, 0)
+Attach.Size = UDim2.new(0, 200, 0, 50)
+Attach.Font = Enum.Font.SourceSans
+Attach.Text = "attach"
+Attach.TextColor3 = Color3.fromRGB(255, 0, 0)
+Attach.TextScaled = true
+Attach.TextSize = 14
+Attach.TextWrapped = true
+Attach.MouseButton1Down:connect(function()
+   FuncFrame.Visible = false
    loadstring(game:HttpGet("https://raw.githubusercontent.com/kali-al/ghbdtn/main/hack.lua", true))()
-   imz.Text = "Press E to imz"
-   imz.TextScaled = true
-   imz.TextSize = 14
-   imz.TextWrapped = true
 end)
 Name = game.Players.LocalPlayer.Name
 local newsound = Instance.new("Sound",workspace)
@@ -189,7 +195,7 @@ earbleep.Enabled = true
 earbleep.Priority = 55
 Welcome.Text = "WELCOME: "..Name..""
 TextLabel.Text = "HELLO: "..Name..""
-key = "ghjkghjfglkhjlfgkjhlfgkh456465564"
+key = "1"
 CheckKey.MouseButton1Down:connect(function()
 if KeyBox.Text == key  then 
 	game.StarterGui:SetCore('SendNotification', {
