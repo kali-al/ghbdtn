@@ -1064,7 +1064,7 @@ MainFrame.Parent = ScreenGui
 MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MainFrame.Position = UDim2.new(0.427115172, 0, 0.298597217, 0)
 MainFrame.Size = UDim2.new(0, 850, 0, 502)
-MainFrame.Visible = false
+MainFrame.Visible = true
 MainFrame.Image = "http://www.roblox.com/asset/?id=4695436661"
  
 ClickTP.Name = "ClickTP"
