@@ -1148,7 +1148,7 @@ end)
 OpenB.Name = "OpenB"
 OpenB.Parent = ScreenGui
 OpenB.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-OpenB.Position = UDim2.new(0.436289489, 0, 0.905811608, 0)
+OpenB.Position = UDim2.new(0.1, 0, 0.3, 0)
 OpenB.Size = UDim2.new(0, 200, 0, 40)
 OpenB.Font = Enum.Font.SciFi
 OpenB.Text = "Open"
