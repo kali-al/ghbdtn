@@ -326,6 +326,9 @@ rageknopka.MouseButton1Down:connect(function()
 
 	watermarkknopkaon.Visible = false
     watermarkknopkaoff.Visible = false
+
+    RAGEknopkaoff.Visible = true
+    RAGEknopkaon.Visible = true
 end)
 
 --|RAGE-оn-off|
