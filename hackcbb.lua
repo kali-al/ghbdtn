@@ -260,6 +260,8 @@ legitknopka.MouseButton1Down:connect(function()
 
 	watermarkknopkaon.Visible = false
     watermarkknopkaoff.Visible = false
+    RAGEknopkaon.Visible = false
+    RAGEknopkaoff.Visible = false
 end)
 
 
@@ -360,8 +362,8 @@ RAGEknopkaoff.TextSize = 14
 RAGEknopkaoff.TextWrapped = true
 RAGEknopkaoff.Visible = true
 RAGEknopkaoff.MouseButton1Down:connect(function()
-   RAGEoff.Visible = false
-   RAGEon.Visible = true
+   RAGEoff.Visible = true
+   RAGEon.Visible = false
    RAGEknopkaon.Visible = true
    RAGEknopkaoff.Visible = false
 end)
@@ -438,6 +440,8 @@ hvhknopka.MouseButton1Down:connect(function()
 
 	watermarkknopkaon.Visible = false
     watermarkknopkaoff.Visible = false
+    RAGEknopkaon.Visible = false
+    RAGEknopkaoff.Visible = false
 end)
 
 
@@ -505,6 +509,8 @@ visualsknopka.MouseButton1Down:connect(function()
 
 	watermarkknopkaon.Visible = false
     watermarkknopkaoff.Visible = false
+    RAGEknopkaon.Visible = false
+    RAGEknopkaoff.Visible = false
 end)
 
 
@@ -574,8 +580,12 @@ skinsknopka.MouseButton1Down:connect(function()
 	misc.Visible = false
 	home.Active = false
 
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/kali-al/ghbdtn/main/skin.lua', true))()
+
 	watermarkknopkaon.Visible = false
     watermarkknopkaoff.Visible = false
+    RAGEknopkaon.Visible = false
+    RAGEknopkaoff.Visible = false
 end)
 
 
@@ -644,6 +654,8 @@ miscknopka.MouseButton1Down:connect(function()
 
 	watermarkknopkaon.Visible = false
     watermarkknopkaoff.Visible = false
+    RAGEknopkaon.Visible = false
+    RAGEknopkaoff.Visible = false
 end)
 
 
