@@ -360,8 +360,8 @@ RAGEknopkaoff.TextSize = 14
 RAGEknopkaoff.TextWrapped = true
 RAGEknopkaoff.Visible = true
 RAGEknopkaoff.MouseButton1Down:connect(function()
-   RAGEoff.Visible = true
-   RAGEon.Visible = false
+   RAGEoff.Visible = false
+   RAGEon.Visible = true
    RAGEknopkaon.Visible = true
    RAGEknopkaoff.Visible = false
 end)
@@ -372,7 +372,7 @@ RAGEon.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
 RAGEon.Position = UDim2.new(0, 26, 0.09, 0)
 RAGEon.Size = UDim2.new(0, 20, 0, 20)
 RAGEon.Image = "rbxassetid://6489346900"
-RAGEon.Visible = true
+RAGEon.Visible = false
 
 RAGEoff.Name = "RAGEoff"
 RAGEoff.Parent = RAGE
@@ -380,7 +380,7 @@ RAGEoff.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
 RAGEoff.Position = UDim2.new(0, 26, 0.09, 0)
 RAGEoff.Size = UDim2.new(0, 20, 0, 20)
 RAGEoff.Image = "rbxassetid://6489347284"
-RAGEoff.Visible = false
+RAGEoff.Visible = true
 
 
 
