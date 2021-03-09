@@ -183,7 +183,7 @@ Attach.TextSize = 14
 Attach.TextWrapped = true
 Attach.MouseButton1Down:connect(function()
    FuncFrame.Visible = false
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/kali-al/ghbdtn/main/hack.lua", true))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/kali-al/ghbdtn/main/hackcbb.lua", true))()
 end)
 Name = game.Players.LocalPlayer.Name
 local newsound = Instance.new("Sound",workspace)
