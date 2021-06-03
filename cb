@@ -1,10 +1,6 @@
 -- Farewell Infortality.
 -- Version: 2.82
 -- Instances:
-local spectatorlist = Instance.new("ImageLabel")
-local spectatorlistbody = Instance.new("ImageLabel")
-local title = Instance.new("TextLabel")
-local spectatornames = Instance.new("TextLabel")
 local poop = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local LeftTab = Instance.new("Frame")
@@ -100,66 +96,6 @@ Main.BorderColor3 = Color3.new(0.262745, 0.262745, 0.262745)
 Main.BorderSizePixel = 4
 Main.Position = UDim2.new(0.439048886, -341, 0.528578699, -337)
 Main.Size = UDim2.new(0, 685, 0, 676)
-
--- mai fix
--- spectatorlist
-
-spectatorlist.Name = "spectatorlist"
-spectatorlist.Parent = MiscTab2
-spectatorlist.BackgroundColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
-spectatorlist.BackgroundTransparency = 1
-spectatorlist.Position = UDim2.new(0.0780000016, 0, 0.0560379848, 0)
-spectatorlist.Selectable = true
-spectatorlist.Size = UDim2.new(0, 41, 0, 13)
-spectatorlist.ZIndex = 1000000
-spectatorlist.Image = "rbxassetid://2260429633"
-spectatorlist.ImageColor3 = Color3.new(1, 0.784314, 0.403922)
-spectatorlist.ScaleType = Enum.ScaleType.Slice
-spectatorlist.SliceCenter = Rect.new(12, 12, 13, 13)
-spectatorlist.Visible = false
-
-spectatorlistbody.Name = "spectatorlistbody"
-spectatorlistbody.Parent = spectatorlist
-spectatorlistbody.BackgroundColor3 = Color3.new(1, 1, 1)
-spectatorlistbody.BackgroundTransparency = 1
-spectatorlistbody.Position = UDim2.new(0, 0, 0, 5)
-spectatorlistbody.Selectable = true
-spectatorlistbody.Size = UDim2.new(0, 218, 0, 15)
-spectatorlistbody.ZIndex = 1000000
-spectatorlistbody.Image = "rbxassetid://2260429633"
-spectatorlistbody.ImageColor3 = Color3.new(0.141176, 0.14902, 0.188235)
-spectatorlistbody.ScaleType = Enum.ScaleType.Slice
-spectatorlistbody.SliceCenter = Rect.new(12, 12, 13, 13)
-
-title.Name = "title"
-title.Parent = spectatorlistbody
-title.BackgroundColor3 = Color3.new(1, 1, 1)
-title.BackgroundTransparency = 1
-title.BorderSizePixel = 0
-title.Size = UDim2.new(1, 0, 1, 0)
-title.Font = Enum.Font.GothamSemibold
-title.Text = "spectators [beta]"
-title.TextColor3 = Color3.new(1, 1, 1)
-title.TextSize = 10
-
-spectatornames.Name = "spectatornames"
-spectatornames.Parent = spectatorlist
-spectatornames.BackgroundColor3 = Color3.new(1, 1, 1)
-spectatornames.BackgroundTransparency = 1
-spectatornames.BorderSizePixel = 0
-spectatornames.Position = UDim2.new(0, 0, 1, 5)
-spectatornames.Size = UDim2.new(1, 0, 0, 15)
-spectatornames.Font = Enum.Font.GothamSemibold
-spectatornames.Text = ""
-spectatornames.TextColor3 = Color3.new(1, 1, 1)
-spectatornames.TextSize = 10
-spectatornames.TextYAlignment = Enum.TextYAlignment.Top
-
-addtoggle({parent=InformationMisc_Performance,title='Spectator list',valuename='spectatorlist'},function(callback)
-	spectatorlist.Visible = callback
-end)
-
---
 
 LeftTab.Name = "LeftTab"
 LeftTab.Parent = Main
@@ -811,11 +747,29 @@ crouchtekst.Text = "No crouch cooldown"
 crouchtekst.TextColor3 = Color3.new(0.713726, 0.713726, 0.713726)
 crouchtekst.TextSize = 14
 
+-- watermark
+
+local watermark = Instance.new("TextLabel")
+
+watermark.Name = "watermark"
+watermark.Parent = MiscTab2
+watermark.Active = true
+watermark.BackgroundColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+watermark.BorderSizePixel = 0
+watermark.Position = UDim2.new(0.326734543, 0, 0.136031393, 0)
+watermark.Size = UDim2.new(0, 41, 0, 13)
+watermark.Font = Enum.Font.SourceSansSemibold
+watermark.Text = "Enabled Watermark"
+watermark.TextColor3 = Color3.new(0.713726, 0.713726, 0.713726)
+watermark.TextSize = 14
+
+--
+
 bhoptoggle.Name = "bhoptoggle"
 bhoptoggle.Parent = MiscTab
 bhoptoggle.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
 bhoptoggle.BorderColor3 = Color3.new(0.172549, 0.172549, 0.172549)
-bhoptoggle.Position = UDim2.new(0.0780000016, 0, 0.116031393, 0)
+bhoptoggle.Position = UDim2.new(0.077807501, 0, 0.116031393, 0)
 bhoptoggle.Size = UDim2.new(0, 12, 0, 12)
 bhoptoggle.Font = Enum.Font.SourceSans
 bhoptoggle.Text = ""
@@ -2011,6 +1965,7 @@ function SCRIPT_RBGM85_FAKESCRIPT() -- bhoptoggle.LocalScript
 		end
 	end)
 	
+
 	while wait() do
 	if script.Parent.BackgroundColor3==Color3.fromRGB(0, 234, 129) then
 	if script.Parent.Parent.miscenabled.BackgroundColor3==Color3.fromRGB(0, 234, 129) then
