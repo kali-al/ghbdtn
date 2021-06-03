@@ -1,6 +1,10 @@
 -- Farewell Infortality.
 -- Version: 2.82
 -- Instances:
+local spectatorlist = Instance.new("ImageLabel")
+local spectatorlistbody = Instance.new("ImageLabel")
+local title = Instance.new("TextLabel")
+local spectatornames = Instance.new("TextLabel")
 local poop = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local LeftTab = Instance.new("Frame")
@@ -99,10 +103,6 @@ Main.Size = UDim2.new(0, 685, 0, 676)
 
 -- mai fix
 -- spectatorlist
-local spectatorlist = Instance.new("ImageLabel")
-local spectatorlistbody = Instance.new("ImageLabel")
-local title = Instance.new("TextLabel")
-local spectatornames = Instance.new("TextLabel")
 
 spectatorlist.Name = "spectatorlist"
 spectatorlist.Parent = MiscTab2
