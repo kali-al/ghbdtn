@@ -664,6 +664,7 @@ end)
 
 --script
 
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
 
 game:GetService("UserInputService").InputBegan:connect(function(input, gameProcessed)
 if input.KeyCode == Enum.KeyCode.KeypadOne then
