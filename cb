@@ -991,6 +991,9 @@ cursor.BorderSizePixel = 0
 cursor.Size = UDim2.new(0, 10, 0, 10)
 cursor.ZIndex = 999
 -- Scripts:
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+
 function SCRIPT_XAOR85_FAKESCRIPT() -- teammatesknop.LocalScript 
 	local script = Instance.new('LocalScript')
 	script.Parent = teammatesknop
